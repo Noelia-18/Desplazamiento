@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Regresión - Desplazamiento</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="main-rect">
+    <h2>Calculadora de Desplazamiento por Regresión</h2>
+    <div class="input-group">
+      <input type="number" id="longitud" placeholder="Longitud (m)" />
+      <input type="number" id="masa" placeholder="Masa por metro (kg/m)" />
+      <input type="number" id="mantenimiento" placeholder="Mantenimiento (%)" />
+    </div>
+    <div class="buttons">
+      <button onclick="calcularDesplazamiento()">Calcular</button>
+      <button onclick="resetear()">Restablecer</button>
+    </div>
+    <div class="output">
+      <p id="resultado">Desplazamiento máximo: - mm</p>
+    </div>
+    <div class="grafico-rect">
+      <canvas id="grafico"></canvas>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
